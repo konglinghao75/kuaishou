@@ -1,0 +1,201 @@
+@import 'fonts.css';
+.header {
+  margin-bottom: 0.42666667rem;
+}
+.header .back {
+  float: left;
+  width: 15%;
+  height: 1.344rem;
+  padding: .2rem .1rem;
+}
+.header .back a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 0.74666667rem;
+  text-align: center;
+  line-height: 1.344rem;
+  position: relative;
+  left: 0.21333333rem;
+}
+.header .back::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-width: 0.29866667rem 0.64rem 0.29866667rem 0;
+  border-style: solid;
+  border-color: transparent #222020 transparent transparent;
+  /*透明 灰 透明 透明 */
+  position: absolute;
+  top: 0.55466667rem;
+  left: 0rem;
+}
+.header .search {
+  float: right;
+  width: 80%;
+  padding: .2rem .1rem;
+}
+.header .search form {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.152rem;
+  border: 1px solid #ffffff;
+  transition: 0.2s box-shadow;
+}
+.header .search form input.search-inp {
+  float: left;
+  box-sizing: border-box;
+  width: 76%;
+  height: 1.344rem;
+  font-size: 0.707407rem;
+  color: #fff;
+  background: #ff8d1b;
+  padding: 0.42666667rem 0.512rem;
+  border-radius: 1.152rem 0 0 1.152rem;
+}
+.header .search form input.search-inp::-webkit-input-placeholder {
+  /* placeholder颜色  */
+  color: #f4f4f5cc;
+  /* placeholder字体大小  */
+  font-size: 12px;
+  /* placeholder位置  */
+  text-align: left;
+}
+.header .search form button.search-btn {
+  float: left;
+  width: 24%;
+  height: 1.344rem;
+  background: #181717;
+  color: #fff;
+  font-size: 0.64740741rem;
+  border-radius: 0 1.152rem 1.152rem 0;
+}
+body {
+  margin-bottom: 0.42666667rem;
+}
+body .back {
+  float: left;
+  width: 15%;
+  height: 1.344rem;
+  padding: .2rem .1rem;
+}
+body .back a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 0.74666667rem;
+  text-align: center;
+  line-height: 1.344rem;
+  position: relative;
+  left: 0.21333333rem;
+}
+body .back::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-width: 0.29866667rem 0.64rem 0.29866667rem 0;
+  border-style: solid;
+  border-color: transparent #222020 transparent transparent;
+  /*透明 灰 透明 透明 */
+  position: absolute;
+  top: 0.55466667rem;
+  left: 0rem;
+}
+body .search {
+  float: right;
+  width: 80%;
+  padding: .2rem .1rem;
+}
+body .search form {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.152rem;
+  border: 1px solid #ffffff;
+  transition: 0.2s box-shadow;
+}
+body .search form input.search-inp {
+  float: left;
+  box-sizing: border-box;
+  width: 76%;
+  height: 1.344rem;
+  font-size: 0.707407rem;
+  color: #fff;
+  background: #ff8d1b;
+  padding: 0.42666667rem 0.512rem;
+  border-radius: 1.152rem 0 0 1.152rem;
+}
+body .search form input.search-inp::-webkit-input-placeholder {
+  /* placeholder颜色  */
+  color: #f4f4f5cc;
+  /* placeholder字体大小  */
+  font-size: 12px;
+  /* placeholder位置  */
+  text-align: left;
+}
+body .search form button.search-btn {
+  float: left;
+  width: 24%;
+  height: 1.344rem;
+  background: #181717;
+  color: #fff;
+  font-size: 0.64740741rem;
+  border-radius: 0 1.152rem 1.152rem 0;
+}
+.wrap .movie-plate .plate-head {
+  display: flex;
+  height: 1.3rem;
+  padding: 0.3rem 1.1rem;
+  border-bottom: 1px #f4f4f4 solid;
+}
+.wrap .movie-plate .plate-head a {
+  font: 0.9rem/1.3rem sans-serif;
+  font-weight: bold;
+}
+.wrap .movie-plate .plate-head a.movie-t {
+  flex: 2;
+}
+.wrap .movie-plate .plate-head a.more-t {
+  flex: 3;
+  text-align: right;
+  font-size: 0.6rem;
+  font-weight: 500;
+  color: #949999;
+}
+.wrap .movie-plate .movie-wrap {
+  margin-top: .3rem;
+}
+.wrap .movie-plate .movie-wrap .movie-thumbnail .movie-row > li {
+  float: left;
+  width: 32%;
+  height: 10rem;
+  padding: .6rem .2rem;
+  overflow: hidden;
+}
+.wrap .movie-plate .movie-wrap .movie-thumbnail .movie-row > li > a {
+  display: block;
+  width: 100%;
+  border-top-left-radius: .8rem;
+  border-top-right-radius: .8rem;
+}
+.wrap .movie-plate .movie-wrap .movie-thumbnail .movie-row > li > a img {
+  height: 7rem;
+  display: block;
+  width: 100%;
+  border-top-left-radius: .8rem;
+  border-top-right-radius: .8rem;
+  background: url(../img/loading.gif) no-repeat center;
+}
+.wrap .movie-plate .movie-wrap .movie-thumbnail .movie-row > li > a h3 {
+  font: 0.6rem sans-serif;
+  margin: 0.3rem 0;
+  font-weight: bolder;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.wrap .movie-plate .movie-wrap .movie-thumbnail .movie-row > li > a p {
+  color: #949999;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,55 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=noe">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>查询结果</title>
+	<link rel="stylesheet" href="{% static 'myks/css/base.css'%}">
+	<link rel="stylesheet" href="{% static 'myks/css/search-list.css'%}">
+	<script src="{% static 'myks/js/jq.js'%}"></script>
+	<script src="{% static 'myks/js/underscore.js'%}"></script>
+	<script src="{% static 'myks/js/adjust.js'%}"></script>
+</head>
+<body>
+	<header class="header clearfix">
+		
+		<div class="search clearfix">
+			<form class="clearfix search-form" action="{%url 'myks:index'%}">
+				<input type="text" name="keyword" id="" class="search-inp" value="输入用户id">
+				<button type="submit" class="search-btn">搜索</button>
+			</form>
+		</div>
+	</header>
+	
+	
+	<section class="search-list">
+		<ul class="list-wrap">
+            {%for i in filmlist%}
+            <li>
+                <a href="{{i.play_url}}" class="clearfix">
+                    <div class="left-box">
+                        <img src="{{i.cover_thumbnail_urls.1.url}}" alt="">
+                    </div>
+                    <div class="right-box">
+                        <h6 class="video-title">标题:{{i.caption|slice:':8'}}...</h6>
+                        <div class="cont">
+                            <p class="p">
+                                <span class="le">作者：</span>
+                                <span class="ri">
+                                    {{i.user_name}}
+                                </span>
+                            </p>
+                            <p class="p"><span class="le">标签：</span><span class="ri">{{i.tags.0.tag}}</span></p>
+                            <p class="p"><span class="le">时间：</span><span class="ri">{{i.time}}</span></p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            {% endfor %}
+		</ul>
+	</section>
+</body>
+<script src="{% static 'myks/js/search-list.js'%}"></script>
+</html>

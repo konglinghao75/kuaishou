@@ -1,0 +1,99 @@
+@import 'fonts.css';
+body {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+body section {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+body section .wrap {
+  width: 14rem;
+  height: 16rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  /*logo*/
+  /*搜索框*/
+  /* 引导 */
+}
+body section .wrap .logo {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+body section .wrap .logo a {
+  display: block;
+  height: 3rem;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 3rem;
+  background: url(../img/logo.png) no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+body section .wrap .search {
+  width: 100%;
+  padding: .2rem .1rem;
+}
+body section .wrap .search form {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.152rem;
+  border: 1px solid #ffffff;
+  transition: 0.2s box-shadow;
+}
+body section .wrap .search form input.search-inp {
+  float: left;
+  box-sizing: border-box;
+  width: 76%;
+  height: 1.984rem;
+  font-size: 0.707407rem;
+  color: #fff;
+  background: #ff8d1b;
+  padding: 0.42666667rem 0.512rem;
+  border-radius: 1.152rem 0 0 1.152rem;
+}
+body section .wrap .search form input.search-inp::-webkit-input-placeholder {
+  /* placeholder颜色  */
+  color: #fbfbfbce;
+  /* placeholder字体大小  */
+  font-size: 12px;
+  /* placeholder位置  */
+  text-align: left;
+}
+body section .wrap .search form button.search-btn {
+  float: left;
+  width: 24%;
+  height: 1.984rem;
+  background: #181717;
+  color: #fff;
+  font-size: 0.64740741rem;
+  border-radius: 0 1.152rem 1.152rem 0;
+}
+body section .wrap .guide {
+  width: 7rem;
+  height: 2rem;
+  background: #ff8d1b;
+  position: relative;
+  border-radius: 50px;
+  margin: 2.4rem auto 0;
+  text-align: center;
+  line-height: 2rem;
+  font-size: 0.61866667rem;
+  transition: all .6s;
+}
+body section .wrap .guide .round {
+  display: block;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+}

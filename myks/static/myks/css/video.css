@@ -1,0 +1,241 @@
+@import 'fonts.css';
+.header {
+  margin-bottom: 0.42666667rem;
+}
+.header .back {
+  float: left;
+  width: 15%;
+  height: 1.344rem;
+  padding: .2rem .1rem;
+}
+.header .back a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 0.74666667rem;
+  text-align: center;
+  line-height: 1.344rem;
+  position: relative;
+  left: 0.21333333rem;
+}
+.header .back::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-width: 0.29866667rem 0.64rem 0.29866667rem 0;
+  border-style: solid;
+  border-color: transparent #222020 transparent transparent;
+  /*透明 灰 透明 透明 */
+  position: absolute;
+  top: 0.55466667rem;
+  left: 0rem;
+}
+.header .search {
+  float: right;
+  width: 80%;
+  padding: .2rem .1rem;
+}
+.header .search form {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.152rem;
+  border: 1px solid #ffffff;
+  transition: 0.2s box-shadow;
+}
+.header .search form input.search-inp {
+  float: left;
+  box-sizing: border-box;
+  width: 76%;
+  height: 1.344rem;
+  font-size: 0.707407rem;
+  color: #fff;
+  background: #ff8d1b;
+  padding: 0.42666667rem 0.512rem;
+  border-radius: 1.152rem 0 0 1.152rem;
+}
+.header .search form input.search-inp::-webkit-input-placeholder {
+  /* placeholder颜色  */
+  color: #f4f4f5cc;
+  /* placeholder字体大小  */
+  font-size: 12px;
+  /* placeholder位置  */
+  text-align: left;
+}
+.header .search form button.search-btn {
+  float: left;
+  width: 24%;
+  height: 1.344rem;
+  background: #181717;
+  color: #fff;
+  font-size: 0.64740741rem;
+  border-radius: 0 1.152rem 1.152rem 0;
+}
+body {
+  background: #EFF0F3;
+  margin-bottom: 0.42666667rem;
+}
+body .back {
+  float: left;
+  width: 15%;
+  height: 1.344rem;
+  padding: .2rem .1rem;
+}
+body .back a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 0.74666667rem;
+  text-align: center;
+  line-height: 1.344rem;
+  position: relative;
+  left: 0.21333333rem;
+}
+body .back::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-width: 0.29866667rem 0.64rem 0.29866667rem 0;
+  border-style: solid;
+  border-color: transparent #222020 transparent transparent;
+  /*透明 灰 透明 透明 */
+  position: absolute;
+  top: 0.55466667rem;
+  left: 0rem;
+}
+body .search {
+  float: right;
+  width: 80%;
+  padding: .2rem .1rem;
+}
+body .search form {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.152rem;
+  border: 1px solid #ffffff;
+  transition: 0.2s box-shadow;
+}
+body .search form input.search-inp {
+  float: left;
+  box-sizing: border-box;
+  width: 76%;
+  height: 1.344rem;
+  font-size: 0.707407rem;
+  color: #fff;
+  background: #ff8d1b;
+  padding: 0.42666667rem 0.512rem;
+  border-radius: 1.152rem 0 0 1.152rem;
+}
+body .search form input.search-inp::-webkit-input-placeholder {
+  /* placeholder颜色  */
+  color: #f4f4f5cc;
+  /* placeholder字体大小  */
+  font-size: 12px;
+  /* placeholder位置  */
+  text-align: left;
+}
+body .search form button.search-btn {
+  float: left;
+  width: 24%;
+  height: 1.344rem;
+  background: #181717;
+  color: #fff;
+  font-size: 0.64740741rem;
+  border-radius: 0 1.152rem 1.152rem 0;
+}
+.head-nav {
+  height: 1.984rem;
+  line-height: 1.984rem;
+  padding-left: 0.448rem;
+  background: #fff;
+}
+.head-nav .video-name {
+  font-size: 0.832rem;
+  color: #3B4858;
+}
+section .video {
+  background: #fff;
+  width: 100%;
+  height: 9.38666667rem;
+}
+section .video video {
+  height: 100%;
+}
+section .feedback {
+  display: flex;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  background: #fff;
+  margin-bottom: 0.85333333rem;
+}
+section .feedback .feedback-l {
+  text-align: center;
+  padding: 0.74666667rem 0;
+}
+section .feedback .feedback-l > span.feedback-num {
+  display: block;
+  color: #fff;
+  width: 1.70666667rem;
+  height: 1.70666667rem;
+  line-height: 1.70666667rem;
+  font-size: 0.55466667rem;
+  border-radius: 50%;
+  background: #3198f3;
+  margin-right: 0.42666667rem;
+}
+section .feedback .feedback-r {
+  text-align: center;
+  padding: 0.74666667rem 0;
+}
+section .feedback .feedback-r > span.feedback-num {
+  display: block;
+  color: #fff;
+  width: 1.70666667rem;
+  height: 1.70666667rem;
+  line-height: 1.70666667rem;
+  font-size: 0.55466667rem;
+  border-radius: 50%;
+  background: #3198f3;
+  margin-right: 0.42666667rem;
+}
+section .episodes {
+  box-sizing: border-box;
+  height: 1.984rem;
+  padding: 0.21333333rem 0;
+  padding-left: 0.448rem;
+  background: #fff;
+  margin-bottom: 0.85333333rem;
+}
+section .episodes span {
+  display: inline-block;
+  width: 1.92rem;
+  height: 1.49333333rem;
+  font-size: 0.55466667rem;
+  color: #3B4858;
+  border: 1px solid #fff;
+  border-radius: 26%;
+  background: #ffa954;
+}
+section .episodes span a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  line-height: 1.49333333rem;
+  text-align: center;
+}
+section .cont-jianj {
+  background: #fff;
+  padding-left: 0.896rem;
+  color: #4C3A4A;
+}
+section .cont-jianj p {
+  height: 2.09066667rem;
+  line-height: 2.09066667rem;
+  font-size: 0.93866667rem;
+  border-bottom: 1px solid #f1f1f1;
+}
+section .cont-jianj .cont-text {
+  padding-top: 0.832rem;
+  font-size: 0.81066667rem;
+  text-indent: 1.28rem;
+}

@@ -1,0 +1,117 @@
+@import './fonts.css';
+@rem: 750/16rem;
+body{
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	section{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		.wrap{
+			width: 14rem;
+			height: 16rem;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			/*logo*/
+			.logo{
+				width: 100%;
+				margin-bottom: 2rem;
+				a{
+					display: block;
+					height: 3rem;
+					text-align: center;
+					font-size: 1rem;
+					line-height: 3rem;
+					background: url(../img/logo.png) no-repeat;
+					background-position: center center;
+					background-size: contain;
+				}
+			}
+			/*搜索框*/
+			.search{
+				width: 100%;
+				padding: .2rem .1rem;
+				form{
+					width: 100%;
+					height: 100%;
+					border-radius: 54/@rem;
+					border: 1px solid rgb(255, 255, 255);
+					transition: .2s box-shadow;
+					input.search-inp{
+						float: left;
+						box-sizing: border-box;
+						width: 76%;
+						height: 93/@rem;
+						font-size: 0.707407rem;
+						color: #fff;
+						background: #ff8d1b;
+						padding: 20/@rem 24/@rem;
+						border-radius: 54/@rem 0 0 54/@rem;
+						&::-webkit-input-placeholder {
+							/* placeholder颜色  */
+							color: #fbfbfbce;
+							/* placeholder字体大小  */
+							font-size: 12px;
+							/* placeholder位置  */
+							text-align: left;
+						}
+					}
+					button.search-btn{
+						float: left;
+						width: 24%;
+						height: 93/@rem;
+						background: #181717;
+						color: #fff;
+						font-size: 0.64740741rem;
+						border-radius: 0 54/@rem 54/@rem 0;
+					}
+				}
+			}
+			/* 引导 */
+			.guide{
+				width: 7rem;
+				height: 2rem;
+				background: #ff8d1b;
+				position: relative;
+				border-radius: 50px;
+				margin: 2.4rem auto 0;
+				text-align: center;
+				line-height: 2rem;
+				font-size: 29/@rem;
+				transition: all .6s;
+				
+				// &::after{
+				// 	content: '';
+				// 	width:0;
+				// 	height:0;
+				// 	border-width:60/@rem 30/@rem 60/@rem 150/@rem;
+				// 	border-style:solid;
+				// 	border-color:transparent transparent transparent #222020;/*透明 灰 透明 透明 */
+				// 	position: absolute;
+				// 	top:-10/@rem;
+				// 	right: -160/@rem;
+				// }
+				.round{
+					display: block;
+					color: #fff;
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+	}
+}
+
+// .carousel-wrap >
+// .carousel-wrap >.list >li >a, .carousel-wrap >.list >li >a >img{
+// 	display: block;
+// }

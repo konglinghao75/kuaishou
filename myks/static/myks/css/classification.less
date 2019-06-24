@@ -1,0 +1,72 @@
+@import './fonts.css';
+@import './same.less';
+body{
+	.header()
+}
+// ../public/img/loading.gif
+.wrap{
+	.movie-plate{
+		.plate-head{
+			display: flex;
+			height: 1.3rem;
+			padding: 0.3rem 1.1rem;
+			border-bottom: 1px #f4f4f4 solid;
+			a{
+				font: 0.9rem/1.3rem sans-serif;
+				font-weight: bold;
+				&.movie-t{
+					flex: 2;
+				}
+				&.more-t{
+					flex: 3;
+					text-align: right;
+					font-size: 0.6rem;
+					font-weight: 500;
+					color: #949999;
+				}
+			}
+		}
+		.movie-wrap{
+			margin-top: .3rem;
+			.movie-thumbnail {
+				.movie-row {
+					&>li{
+						float: left;
+						width: 32%;
+						height: 10rem;
+						padding: .6rem .2rem;
+						overflow: hidden;
+						&>a{
+							display: block;
+							width: 100%;
+							border-top-left-radius: .8rem;
+							border-top-right-radius: .8rem;
+							img{
+								height: 7rem;
+								display: block;
+								width: 100%;
+								border-top-left-radius: .8rem;
+								border-top-right-radius: .8rem;
+								background: url(../img/loading.gif) no-repeat center;
+							}
+							h3{
+								font: .6rem sans-serif;
+								margin: 0.3rem 0;
+								font-weight: bolder;
+								white-space: nowrap;
+								overflow: hidden;
+								text-overflow: ellipsis;
+							}
+							p{
+								color: #949999;
+								white-space: nowrap;
+								overflow: hidden;
+								text-overflow: ellipsis;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
